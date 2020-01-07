@@ -6,7 +6,7 @@
           <img v-if="photoURL" :src="photoURL">
         </v-list-item-avatar>
         <v-list-item-content>
-          <v-list-item-title>Kazuya Kojima</v-list-item-title>
+          <v-list-item-title>{{ userName }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
@@ -17,7 +17,7 @@
           <v-icon>{{ item.icon }}</v-icon>
         </v-list-item-icon>
         <v-list-item-content>
-          <v-list-item-title>{{ userName }}</v-list-item-title>
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
